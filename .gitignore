@@ -1,0 +1,6 @@
+# Ignore everything under bemicro/build
+/bemicro/build/**
+
+# But keep Quartus project files
+!/bemicro/build/**/*.qsf
+!/bemicro/build/**/*.qpf
