@@ -1,0 +1,314 @@
+BeMicro Max 10 FPGA Evaluation Kit
+Pinout Information for MAX 10 FPGA I/O
+(Extracted from BeMicro Max 10 Getting Started User Guide, Version 14.0)
+
+================================================================================
+3.1 ANALOG DEVICES EXTERNAL PERIPHERALS
+================================================================================
+
+3.1.1 Accelerometer, 3-Axis, SPI interface (ADXL362)
+--------------------------------------------------------------------------------
+Signal Name         MAX 10 Pin
+--------------------------------------------------------------------------------
+ADXL362_CS          L14
+ADXL362_INT1         M15
+ADXL362_INT2        M14
+ADXL362_MISO        L18
+ADXL362_MOSI        L19
+ADXL362_SCLK        M18
+
+3.1.2 DAC, 12-bit, SPI interface (AD5681)
+--------------------------------------------------------------------------------
+Signal Name         MAX 10 Pin
+--------------------------------------------------------------------------------
+AD5681R_LDACn       N18
+AD5681R_RSTn        L15
+AD5681R_SCL         G17
+AD5681R_SDA         H17
+AD5681R_SYNCn       N19
+
+3.1.3 Temperature sensor, I2C interface (ADT7420)
+--------------------------------------------------------------------------------
+Signal Name         MAX 10 Pin
+--------------------------------------------------------------------------------
+ADT7420_CT          P13
+ADT7420_INT         AB14
+ADT7420_SCL         W13
+ADT7420_SDA         R13
+
+================================================================================
+3.2 EXTERNAL MEMORY DEVICES
+================================================================================
+
+3.2.1 8MB SDRAM (ISSI IS42S16400J-7TL)
+--------------------------------------------------------------------------------
+Signal Name         MAX 10 Pin
+--------------------------------------------------------------------------------
+SDRAM_A[0]          T20
+SDRAM_A[1]          T19
+SDRAM_A[2]          T18
+SDRAM_A[3]          AA21
+SDRAM_A[4]          AA22
+SDRAM_A[5]          U22
+SDRAM_A[6]          T22
+SDRAM_A[7]          R22
+SDRAM_A[8]          P20
+SDRAM_A[9]          P22
+SDRAM_A[10]         U21
+SDRAM_A[11]         P19
+SDRAM_A[12]         N20
+SDRAM_BA[0]         R20
+SDRAM_BA[1]         T21
+SDRAM_CASn          N21
+SDRAM_CKE           N22
+SDRAM_CLK           M22
+SDRAM_CSn           P21
+SDRAM_DQ[0]         C22
+SDRAM_DQ[1]         D22
+SDRAM_DQ[2]         E22
+SDRAM_DQ[3]         F22
+SDRAM_DQ[4]         G22
+SDRAM_DQ[5]         H22
+SDRAM_DQ[6]         J22
+SDRAM_DQ[7]         K22
+SDRAM_DQ[8]         K21
+SDRAM_DQ[9]         J21
+SDRAM_DQ[10]        H21
+SDRAM_DQ[11]        G20
+SDRAM_DQ[12]        F21
+SDRAM_DQ[13]        E21
+SDRAM_DQ[14]        D21
+SDRAM_DQ[15]        C21
+SDRAM_DQMH          L22
+SDRAM_DQML          L20
+SDRAM_RASn          M20
+SDRAM_WEn           M21
+
+3.2.2 Serial Flash, 16 Mbit (Micron M25P16-VMN6)
+--------------------------------------------------------------------------------
+Signal Name         MAX 10 Pin
+--------------------------------------------------------------------------------
+SFLASH_ASDI         R11
+SFLASH_CSn          R10
+SFLASH_DATA         P10
+SFLASH_DCLK         P11
+
+================================================================================
+3.3 USER INTERACTION
+================================================================================
+
+3.3.1 LEDs
+--------------------------------------------------------------------------------
+Board Label   Signal Name       MAX 10 Pin
+--------------------------------------------------------------------------------
+D1            USER_LED[1]       M2
+D2            USER_LED[2]       N1
+D3            USER_LED[3]       R2
+D4            USER_LED[4]       T1
+D5            USER_LED[5]       V4
+D6            USER_LED[6]       T6
+D7            USER_LED[7]       AB4
+D8            USER_LED[8]       AA5
+
+3.3.2 Push Buttons
+--------------------------------------------------------------------------------
+Board Label   Signal Name       MAX 10 Pin
+--------------------------------------------------------------------------------
+SW1           PB[1]             M1
+SW2           PB[2]             R1
+SW3           PB[3]             V5
+SW4           PB[4]             AB5
+
+================================================================================
+3.4 MAX 10 FPGA ANALOG INPUTS
+================================================================================
+
+3.4.1 Analog Input Header
+--------------------------------------------------------------------------------
+Signal Name   MAX 10 Pin   ADC Channel   Board Connection Point
+--------------------------------------------------------------------------------
+AIN[0]        F5           Ch. 1         2x2 header J11, pin 1
+AIN[1]        E4           Ch. 9         2x2 header J11, pin 2
+AIN[2]        F4           Ch. 2         testpoint TP12 (silkscreen "AIN3" on back)
+AIN[3]        E3           Ch. 16        testpoint TP13 (silkscreen "AIN4" on back)
+AIN[4]        J8           Ch. 3         testpoint TP15 (silkscreen "AIN5" on back)
+AIN[5]        G4           Ch. 11        testpoint TP14 (silkscreen "AIN6" on back)
+
+3.4.2 Photo Resistor
+--------------------------------------------------------------------------------
+Signal Name   MAX 10 Pin   ADC Channel
+--------------------------------------------------------------------------------
+AIN[6]        J9           Ch. 4
+
+3.4.3 Thermistor (Thermal Resistor)
+--------------------------------------------------------------------------------
+Signal Name   MAX 10 Pin   ADC Channel
+--------------------------------------------------------------------------------
+AIN[7]        F3           Ch. 12
+
+3.4.4 Other MAX 10 ADC Inputs
+--------------------------------------------------------------------------------
+Signal Name   MAX 10 Pin        ADC Channel      Board Connection Point
+--------------------------------------------------------------------------------
+VCC3P3        J4                Ch. 5            3.3V power rail
+VCC2P5        H4                Ch. 13           2.5V power rail
+VCC1P8        H3                Ch. 6            1.8V power rail
+VCC1P2        G3                Ch. 14           1.2V power rail
+GND           K5, K6, J3, K4    Ch. 7, 8, 10, 15 ground
+
+================================================================================
+3.5 EXPANSION HEADERS AND CONNECTORS
+================================================================================
+
+3.5.1 BeMicro Edge Connector (80-pin)
+(Samtec connector part number MEC6-140-02-X-D-RA1 mates to this edge connector)
+--------------------------------------------------------------------------------
+Signal Name    MAX 10 Pin        Signal Name    MAX 10 Pin
+--------------------------------------------------------------------------------
+EG_P1          C1                EG_P35         E11
+EG_P2          D2                EG_P36         E10
+EG_P3          D1                EG_P37         D9
+EG_P4          D3                EG_P38         E9
+EG_P5          E1                EG_P39         E8
+EG_P6          F2                EG_P40         D8
+EG_P7          F1                EG_P41         E6
+EG_P8          G1                EG_P42         D7
+EG_P9          H1                EG_P43         C8
+EG_P10         J1                EG_P44         C7
+EG_P11         K2                EG_P45         D6
+EG_P12         L2                EG_P46         C6
+EG_P13         N2                EG_P47         D5
+EG_P14         P3                EG_P48         C5
+EG_P15         P1                EG_P49         C4
+EG_P16         R3                EG_P50         H11
+EG_P17         T2                EG_P51         J10
+EG_P18         R4                EG_P52         M9
+EG_P19         T5                EG_P53         M8
+EG_P20         Y1                EG_P54         N9
+EG_P21         Y2                EG_P55         N8
+EG_P22         AA1               EG_P56         N5
+EG_P23         AA2               EG_P57         N4
+EG_P24         Y3                EG_P58         N3
+EG_P25         Y4                EG_P59         P5
+EG_P26         AB6               EG_P60         P4
+EG_P27         AB7               EXP_PRESENT    R5
+EG_P28         AA8               RESET_EXPn     C2
+EG_P29         AB8
+
+3.5.2 Two 40-pin Expansion Headers (J3 and J4)
+(Pinout matches several third-party daughter cards, e.g. Terasic)
+
+--- Header J3 ---
+--------------------------------------------------------------------------------
+Signal Name           MAX 10 Pin   J3 Pin
+--------------------------------------------------------------------------------
+GPIO_01               B2           1
+GPIO_02               B1           2
+GPIO_03               C3           3
+GPIO_04               A2           4
+GPIO_05               B3           5
+GPIO_06               A3           6
+GPIO_07               B4           7
+GPIO_08               A4           8
+GPIO_09               B5           9
+GPIO_10               A5           10
+GPIO_11               B7           13
+GPIO_12               A6           14
+DIFF_RX_P[0]          K14          39
+DIFF_RX_P[0](n)       K15          40
+DIFF_RX_P[1]          E16          37
+DIFF_RX_P[1](n)       E15          38
+DIFF_RX_P[2]          D17          35
+DIFF_RX_P[2](n)       C17          36
+DIFF_RX_P[3]          H14          33
+DIFF_RX_P[3](n)       J13          34
+DIFF_RX_P[4]          C14          31
+DIFF_RX_P[4](n)       C13          32
+DIFF_RX_P[5]          A14          27
+DIFF_RX_P[5](n)       B14          28
+DIFF_RX_P[6]          D14          25
+DIFF_RX_P[6](n)       E13          26
+DIFF_RX_P[7]          E12          23
+DIFF_RX_P[7](n)       D13          24
+DIFF_RX_P[8]          H12          21
+DIFF_RX_P[8](n)       J11          22
+DIFF_RX_P[9]          B10          19
+DIFF_RX_P[9](n)       C9           20
+DIFF_RX_P[10]         A9           17
+DIFF_RX_P[10](n)      B8           18
+DIFF_RX_P[11]         A7           15
+DIFF_RX_P[11](n)      A8           16
+
+--- Header J4 ---
+--------------------------------------------------------------------------------
+Signal Name           MAX 10 Pin   J4 Pin
+--------------------------------------------------------------------------------
+I2C_SDA               AA14         3
+I2C_SCL               AB15         4
+GPIO_A                AA15         5
+GPIO_B                Y16          6
+LVDS_TX_P[0]          V17          39
+LVDS_TX_P[0](n)       W17          40
+LVDS_TX_P[1]          V16          37
+LVDS_TX_P[1](n)       U15          38
+LVDS_TX_P[2]          W15          35
+LVDS_TX_P[2](n)       V14          36
+LVDS_TX_P[3]          W14          31
+LVDS_TX_P[3](n)       V13          32
+LVDS_TX_P[4]          Y14          29
+LVDS_TX_P[4](n)       Y13          30
+LVDS_TX_P[5]          AA10         27
+LVDS_TX_P[5](n)       Y10          28
+LVDS_TX_P[6]          V10          23
+LVDS_TX_P[6](n)       V9           24
+LVDS_TX_P[7]          AA7          21
+LVDS_TX_P[7](n)       AA6          22
+LVDS_TX_P[8]          W8           19
+LVDS_TX_P[8](n)       W7           20
+LVDS_TX_P[9]          U7           15
+LVDS_TX_P[9](n)       U6           16
+LVDS_TX_P[10]         W6           13
+LVDS_TX_P[10](n)      W5           14
+LVDS_TX_P[11]         W3           11
+LVDS_TX_P[11](n)      W4           12
+
+3.5.3 PMOD Connectors (U5 & U6, two 2x6 female PMOD connectors)
+--------------------------------------------------------------------------------
+Signal Name    MAX 10 Pin
+--------------------------------------------------------------------------------
+PMOD_A[0]      C20
+PMOD_A[1]      D19
+PMOD_A[2]      D18
+PMOD_A[3]      E18
+
+PMOD_B[0]      E19
+PMOD_B[1]      F18
+PMOD_B[2]      F20
+PMOD_B[3]      G19
+
+PMOD_C[0]      U18
+PMOD_C[1]      U17
+PMOD_C[2]      R18
+PMOD_C[3]      P18
+
+PMOD_D[0]      R14
+PMOD_D[1]      R15
+PMOD_D[2]      P15
+PMOD_D[3]      P14
+
+================================================================================
+3.6 CLOCK INPUTS
+================================================================================
+--------------------------------------------------------------------------------
+Signal Name    MAX 10 Pin    Description
+--------------------------------------------------------------------------------
+SYS_CLK        N14           50 MHz "System" Clock Input
+USER_CLK       N15           Unpopulated "User" Clock Input
+
+================================================================================
+3.7 BOOT SELECT
+================================================================================
+Jumper J3 is used to strap the MAX 10 FPGA device's BOOT_SEL pin. The 10M08
+device supports holding two FPGA images in its Configuration Flash Memory.
+The BOOT_SEL pin can be used to allow the user to select which image is
+loaded by default on power up.
