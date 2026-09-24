@@ -13,7 +13,6 @@
 -- The signals below are documented in the "BeMicro MAX 10 Getting Started
 -- User Guide."  Please refer to that document for additional signal details.
 --
--- @@@@@@@@@@@@@@@@@@
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
